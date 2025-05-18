@@ -1,2 +1,173 @@
-# kushagra
-my websites
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kushagra Tiwari| Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem;
+    }
+    nav ul li {
+      margin: 0 1.5rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #007bff;
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    #home {
+      background: #fff;
+      padding-top: 8rem;
+    }
+    #home h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    #home p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #007bff;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .skill {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: 500;
+    }
+    .qualification {
+      background: #fff;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .qualification h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    #contact a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      nav ul li {
+        margin: 0 1rem;
+      }
+      #home h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 3rem 1rem;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>Your Name</h1>
+    <p>Aspiring Web Developer | Passionate About Building Solutions</p>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught coder with a passion for creating user-friendly websites and solving real-world problems. My journey started with free online courses, and now I'm building projects to showcase my skills. I thrive on learning and tackling new challenges.</p>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML/CSS</div>
+      <div class="skill">SEO</div>
+      <!-- Add more skills here -->
+    </div>
+  </section>
+  <section id="qualifications">
+    <h2>Qualifications</h2>
+    <div class="qualification">
+      <h3>Google Data Analytics Certificate</h3>
+      <p>Completed a 6-month course mastering data visualization and analysis with tools like Tableau and SQL. Built a dashboard project for real-world data.</p>
+    </div>
+    <div class="qualification">
+      <h3>Portfolio Website Project</h3>
+      <p>Designed and coded a responsive portfolio site using HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+    </div>
+    <!-- Add more qualifications here -->
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach out to discuss opportunities or collaborations!</p>
+    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </section>
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
